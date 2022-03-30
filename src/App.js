@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles.css"
+import ImageInSrc from './bigoequation.jpg'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{border:"solid 1px black",maxWidth:"100vw"}}>
+        <h1 class="title red">Saif</h1>
+
+        <br />
+
+        <img src={ImageInSrc} />
+
+        <br />
+
+        <img src="bigoalgo.png" />
+
+      </div>
+
+      <video width="320" height="240" controls>
+
+        <source src="myVideo.mp4" type="video/mp4" />
+
+      </video>
     </div>
   );
 }
